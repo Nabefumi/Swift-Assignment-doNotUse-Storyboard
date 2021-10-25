@@ -12,7 +12,6 @@ class WelcomeViewController: UIViewController {
     lazy var imageView: BaseUIImageView = {
         let iv = BaseUIImageView()
         iv.image = UIImage(named: "logo")
-        iv.backgroundColor = UIColor.green
         return iv
     }()
     
@@ -36,6 +35,7 @@ class WelcomeViewController: UIViewController {
         
         stack.addArrangedSubview(titleLabel)
         stack.addArrangedSubview(descriptionLabel)
+        stack.alignment = .center
 
         return stack
     }()
@@ -45,7 +45,10 @@ class WelcomeViewController: UIViewController {
         button.setTitle("LOGIN", for: .normal)
         button.backgroundColor = UIColor.green
         button.layer.cornerRadius = 20
-//        button.addTarget(self, action: #selector(loginTapped), for: touchUpInside)
+        button.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        button.addTarget(self, action: #selector(loginTapped), for: .touchUpInside)
+        button.layer.shadowOpacity = 1.5
+        button.layer.shadowColor = UIColor.lightGray.cgColor
         return button
     }()
     
@@ -54,7 +57,10 @@ class WelcomeViewController: UIViewController {
         button.setTitle("SIGN UP", for: .normal)
         button.backgroundColor = UIColor.blue
         button.layer.cornerRadius = 20
-//        button.addTarget(self, action: #selector(SignUpTapped), for: <#T##UIControl.Event#>)
+        button.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        button.addTarget(self, action: #selector(signUpTapped), for: .touchUpInside)
+        button.layer.shadowOpacity = 1.5
+        button.layer.shadowColor = UIColor.lightGray.cgColor
         return button
     }()
     
@@ -63,15 +69,14 @@ class WelcomeViewController: UIViewController {
         stack.spacing = 20
         stack.addArrangedSubview(loginButton)
         stack.addArrangedSubview(signUPButton)
+        stack.widthAnchor.constraint(equalToConstant: 200).isActive = true
         return stack
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = UIColor.red
         title = "Welcome"
-        navigationController?.navigationBar.backgroundColor = UIColor.blue
+        view.backgroundColor = UIColor.white
         
         view.addSubview(imageView)
         NSLayoutConstraint.activate([
@@ -100,7 +105,9 @@ class WelcomeViewController: UIViewController {
     }
     
     @objc func loginTapped() {
-        let loginViewController = LoginViewController()
-        self.navigationController?.pushViewController(loginViewController, animated: true)
+//        let loginViewController = LoginViewController()
+//        self.navigationController?.pushViewController(loginViewController, animated: true)
+        let friendViewController = FriendsViewController()
+        self.navigationController?.pushViewController(friendViewController, animated: true)
     }
 }
