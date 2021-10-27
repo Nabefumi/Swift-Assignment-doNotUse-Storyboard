@@ -20,6 +20,13 @@
 		003743162722781B003A4D2A /* BaceUIButtton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003743152722781B003A4D2A /* BaceUIButtton.swift */; };
 		0037431927239213003A4D2A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037431827239213003A4D2A /* SignUpViewController.swift */; };
 		0037431B2723939D003A4D2A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037431A2723939D003A4D2A /* LoginViewController.swift */; };
+		0037431D2723BD7C003A4D2A /* BaseUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037431C2723BD7C003A4D2A /* BaseUITextField.swift */; };
+		003743202723C54E003A4D2A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037431F2723C54E003A4D2A /* Utils.swift */; };
+		003743222723C9B3003A4D2A /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003743212723C9B3003A4D2A /* FriendsViewController.swift */; };
+		003743242723CA58003A4D2A /* FriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003743232723CA58003A4D2A /* FriendsCell.swift */; };
+		006CE82C2728C097007D2052 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006CE82B2728C097007D2052 /* ProfileViewController.swift */; };
+		006CE82F2728CE2F007D2052 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006CE82E2728CE2F007D2052 /* User.swift */; };
+		006CE8312728CEC2007D2052 /* DataPrivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006CE8302728CEC2007D2052 /* DataPrivider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +45,13 @@
 		003743152722781B003A4D2A /* BaceUIButtton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaceUIButtton.swift; sourceTree = "<group>"; };
 		0037431827239213003A4D2A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0037431A2723939D003A4D2A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0037431C2723BD7C003A4D2A /* BaseUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUITextField.swift; sourceTree = "<group>"; };
+		0037431F2723C54E003A4D2A /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		003743212723C9B3003A4D2A /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		003743232723CA58003A4D2A /* FriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCell.swift; sourceTree = "<group>"; };
+		006CE82B2728C097007D2052 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		006CE82E2728CE2F007D2052 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		006CE8302728CEC2007D2052 /* DataPrivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPrivider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +84,9 @@
 		003742F127225CF1003A4D2A /* Assignment2-1 */ = {
 			isa = PBXGroup;
 			children = (
+				006CE8322728EBE4007D2052 /* Cell */,
+				006CE82D2728CDFD007D2052 /* Data */,
+				0037431E2723C4FB003A4D2A /* Utils */,
 				00374317272391D5003A4D2A /* ViewControllers */,
 				0037430A27226705003A4D2A /* Components */,
 				003742F227225CF1003A4D2A /* AppDelegate.swift */,
@@ -90,6 +107,7 @@
 				003743112722777F003A4D2A /* VStack.swift */,
 				00374313272277B7003A4D2A /* HStack.swift */,
 				003743152722781B003A4D2A /* BaceUIButtton.swift */,
+				0037431C2723BD7C003A4D2A /* BaseUITextField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -100,8 +118,35 @@
 				0037430827225EBB003A4D2A /* WelcomeViewController.swift */,
 				0037431827239213003A4D2A /* SignUpViewController.swift */,
 				0037431A2723939D003A4D2A /* LoginViewController.swift */,
+				003743212723C9B3003A4D2A /* FriendsViewController.swift */,
+				006CE82B2728C097007D2052 /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0037431E2723C4FB003A4D2A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0037431F2723C54E003A4D2A /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		006CE82D2728CDFD007D2052 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				006CE82E2728CE2F007D2052 /* User.swift */,
+				006CE8302728CEC2007D2052 /* DataPrivider.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		006CE8322728EBE4007D2052 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				003743232723CA58003A4D2A /* FriendsCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,11 +220,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				003743122722777F003A4D2A /* VStack.swift in Sources */,
+				003743242723CA58003A4D2A /* FriendsCell.swift in Sources */,
 				0037430927225EBB003A4D2A /* WelcomeViewController.swift in Sources */,
 				003742F327225CF1003A4D2A /* AppDelegate.swift in Sources */,
 				00374310272274B4003A4D2A /* BaceUIStackView.swift in Sources */,
+				003743222723C9B3003A4D2A /* FriendsViewController.swift in Sources */,
+				006CE8312728CEC2007D2052 /* DataPrivider.swift in Sources */,
+				006CE82C2728C097007D2052 /* ProfileViewController.swift in Sources */,
+				006CE82F2728CE2F007D2052 /* User.swift in Sources */,
 				0037431927239213003A4D2A /* SignUpViewController.swift in Sources */,
+				003743202723C54E003A4D2A /* Utils.swift in Sources */,
 				003742F527225CF1003A4D2A /* SceneDelegate.swift in Sources */,
+				0037431D2723BD7C003A4D2A /* BaseUITextField.swift in Sources */,
 				00374314272277B7003A4D2A /* HStack.swift in Sources */,
 				003743162722781B003A4D2A /* BaceUIButtton.swift in Sources */,
 				0037430E27226BBB003A4D2A /* BaseUILabel.swift in Sources */,

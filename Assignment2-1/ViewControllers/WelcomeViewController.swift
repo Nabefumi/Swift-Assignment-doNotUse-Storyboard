@@ -12,7 +12,6 @@ class WelcomeViewController: UIViewController {
     lazy var imageView: BaseUIImageView = {
         let iv = BaseUIImageView()
         iv.image = UIImage(named: "logo")
-        iv.backgroundColor = UIColor.green
         return iv
     }()
     
@@ -20,12 +19,14 @@ class WelcomeViewController: UIViewController {
        let label = BaseUILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Plan your trips"
+        label.font = UIFont.preferredFont(forTextStyle: .title1)
         return label
     }()
     
     lazy var descriptionLabel: BaseUILabel = {
        let label = BaseUILabel()
         label.text = "For the best trip, simply specify your plan."
+        label.textColor = UIColor(hexString: "#B3B5B9")
         return label
     }()
     
@@ -36,6 +37,7 @@ class WelcomeViewController: UIViewController {
         
         stack.addArrangedSubview(titleLabel)
         stack.addArrangedSubview(descriptionLabel)
+        stack.alignment = .center
 
         return stack
     }()
@@ -43,18 +45,26 @@ class WelcomeViewController: UIViewController {
     lazy var loginButton: BaceUIButtton = {
         let button = BaceUIButtton()
         button.setTitle("LOGIN", for: .normal)
-        button.backgroundColor = UIColor.green
+        button.setTitleColor(UIColor.white, for: .normal)
+        button.backgroundColor = UIColor(hexString: "#58CFC2")
         button.layer.cornerRadius = 20
-//        button.addTarget(self, action: #selector(loginTapped), for: touchUpInside)
+        button.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        button.addTarget(self, action: #selector(loginTapped), for: .touchUpInside)
+        button.layer.shadowOpacity = 1.5
+        button.layer.shadowColor = UIColor.lightGray.cgColor
         return button
     }()
     
     lazy var signUPButton: BaceUIButtton = {
         let button = BaceUIButtton()
         button.setTitle("SIGN UP", for: .normal)
-        button.backgroundColor = UIColor.blue
+        button.setTitleColor(UIColor(hexString: "#8C8ABD"), for: .normal)
+        button.backgroundColor = UIColor.white
         button.layer.cornerRadius = 20
-//        button.addTarget(self, action: #selector(SignUpTapped), for: <#T##UIControl.Event#>)
+        button.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        button.addTarget(self, action: #selector(signUpTapped), for: .touchUpInside)
+        button.layer.shadowOpacity = 1.5
+        button.layer.shadowColor = UIColor.lightGray.cgColor
         return button
     }()
     
@@ -63,15 +73,14 @@ class WelcomeViewController: UIViewController {
         stack.spacing = 20
         stack.addArrangedSubview(loginButton)
         stack.addArrangedSubview(signUPButton)
+        stack.widthAnchor.constraint(equalToConstant: 200).isActive = true
         return stack
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = UIColor.red
         title = "Welcome"
-        navigationController?.navigationBar.backgroundColor = UIColor.blue
+        view.backgroundColor = UIColor.white
         
         view.addSubview(imageView)
         NSLayoutConstraint.activate([
@@ -89,7 +98,7 @@ class WelcomeViewController: UIViewController {
         
         view.addSubview(buttonsStack)
         NSLayoutConstraint.activate([
-            buttonsStack.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30),
+            buttonsStack.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100),
             buttonsStack.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
     }
