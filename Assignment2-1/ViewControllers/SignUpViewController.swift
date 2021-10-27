@@ -66,7 +66,7 @@ class SignUpViewController: UIViewController {
         button.widthAnchor.constraint(equalToConstant: 200).isActive = true
         button.layer.cornerRadius = 25
         button.titleLabel?.font = UIFont.preferredFont(forTextStyle:  .headline)
-        
+        button.addTarget(self, action: #selector(signUpHandler), for: .touchUpInside)
         return button
     }()
     
@@ -103,10 +103,12 @@ class SignUpViewController: UIViewController {
         NSLayoutConstraint.activate([
             cpntentStack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             cpntentStack.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-            
-        
         ])
-
+    }
+    
+    @objc func signUpHandler() {
+        let profileVC = ProfileViewController()
+        self.navigationController?.pushViewController(profileVC, animated: true)
     }
     
 }

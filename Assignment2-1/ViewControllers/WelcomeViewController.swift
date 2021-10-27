@@ -19,12 +19,14 @@ class WelcomeViewController: UIViewController {
        let label = BaseUILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Plan your trips"
+        label.font = UIFont.preferredFont(forTextStyle: .title1)
         return label
     }()
     
     lazy var descriptionLabel: BaseUILabel = {
        let label = BaseUILabel()
         label.text = "For the best trip, simply specify your plan."
+        label.textColor = UIColor(hexString: "#B3B5B9")
         return label
     }()
     
@@ -43,7 +45,8 @@ class WelcomeViewController: UIViewController {
     lazy var loginButton: BaceUIButtton = {
         let button = BaceUIButtton()
         button.setTitle("LOGIN", for: .normal)
-        button.backgroundColor = UIColor.green
+        button.setTitleColor(UIColor.white, for: .normal)
+        button.backgroundColor = UIColor(hexString: "#58CFC2")
         button.layer.cornerRadius = 20
         button.heightAnchor.constraint(equalToConstant: 40).isActive = true
         button.addTarget(self, action: #selector(loginTapped), for: .touchUpInside)
@@ -55,7 +58,8 @@ class WelcomeViewController: UIViewController {
     lazy var signUPButton: BaceUIButtton = {
         let button = BaceUIButtton()
         button.setTitle("SIGN UP", for: .normal)
-        button.backgroundColor = UIColor.blue
+        button.setTitleColor(UIColor(hexString: "#8C8ABD"), for: .normal)
+        button.backgroundColor = UIColor.white
         button.layer.cornerRadius = 20
         button.heightAnchor.constraint(equalToConstant: 40).isActive = true
         button.addTarget(self, action: #selector(signUpTapped), for: .touchUpInside)
@@ -94,7 +98,7 @@ class WelcomeViewController: UIViewController {
         
         view.addSubview(buttonsStack)
         NSLayoutConstraint.activate([
-            buttonsStack.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30),
+            buttonsStack.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100),
             buttonsStack.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
     }
@@ -105,9 +109,7 @@ class WelcomeViewController: UIViewController {
     }
     
     @objc func loginTapped() {
-//        let loginViewController = LoginViewController()
-//        self.navigationController?.pushViewController(loginViewController, animated: true)
-        let friendViewController = FriendsViewController()
-        self.navigationController?.pushViewController(friendViewController, animated: true)
+        let loginViewController = LoginViewController()
+        self.navigationController?.pushViewController(loginViewController, animated: true)
     }
 }
