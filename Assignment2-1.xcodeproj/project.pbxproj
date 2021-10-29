@@ -27,6 +27,8 @@
 		006CE82C2728C097007D2052 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006CE82B2728C097007D2052 /* ProfileViewController.swift */; };
 		006CE82F2728CE2F007D2052 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006CE82E2728CE2F007D2052 /* User.swift */; };
 		006CE8312728CEC2007D2052 /* DataPrivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006CE8302728CEC2007D2052 /* DataPrivider.swift */; };
+		006CE858272B80AA007D2052 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006CE857272B80AA007D2052 /* TabBarViewController.swift */; };
+		006CE85B272B81C0007D2052 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006CE85A272B81C0007D2052 /* AppRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		006CE82B2728C097007D2052 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		006CE82E2728CE2F007D2052 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		006CE8302728CEC2007D2052 /* DataPrivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPrivider.swift; sourceTree = "<group>"; };
+		006CE857272B80AA007D2052 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		006CE85A272B81C0007D2052 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 		003742F127225CF1003A4D2A /* Assignment2-1 */ = {
 			isa = PBXGroup;
 			children = (
+				006CE859272B8199007D2052 /* Router */,
 				006CE8322728EBE4007D2052 /* Cell */,
 				006CE82D2728CDFD007D2052 /* Data */,
 				0037431E2723C4FB003A4D2A /* Utils */,
@@ -120,6 +125,7 @@
 				0037431A2723939D003A4D2A /* LoginViewController.swift */,
 				003743212723C9B3003A4D2A /* FriendsViewController.swift */,
 				006CE82B2728C097007D2052 /* ProfileViewController.swift */,
+				006CE857272B80AA007D2052 /* TabBarViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -147,6 +153,14 @@
 				003743232723CA58003A4D2A /* FriendsCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		006CE859272B8199007D2052 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				006CE85A272B81C0007D2052 /* AppRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,11 +241,13 @@
 				003743222723C9B3003A4D2A /* FriendsViewController.swift in Sources */,
 				006CE8312728CEC2007D2052 /* DataPrivider.swift in Sources */,
 				006CE82C2728C097007D2052 /* ProfileViewController.swift in Sources */,
+				006CE85B272B81C0007D2052 /* AppRouter.swift in Sources */,
 				006CE82F2728CE2F007D2052 /* User.swift in Sources */,
 				0037431927239213003A4D2A /* SignUpViewController.swift in Sources */,
 				003743202723C54E003A4D2A /* Utils.swift in Sources */,
 				003742F527225CF1003A4D2A /* SceneDelegate.swift in Sources */,
 				0037431D2723BD7C003A4D2A /* BaseUITextField.swift in Sources */,
+				006CE858272B80AA007D2052 /* TabBarViewController.swift in Sources */,
 				00374314272277B7003A4D2A /* HStack.swift in Sources */,
 				003743162722781B003A4D2A /* BaceUIButtton.swift in Sources */,
 				0037430E27226BBB003A4D2A /* BaseUILabel.swift in Sources */,

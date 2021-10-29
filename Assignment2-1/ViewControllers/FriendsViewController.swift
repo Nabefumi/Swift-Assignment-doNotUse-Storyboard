@@ -10,12 +10,17 @@ import UIKit
 class FriendsViewController: UITableViewController {
     
     let data = DataProvider.makeData()
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        self.parent?.title = "Friends"
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.backgroundColor = UIColor.white
-        title = "Friends"
+//        title = "Friends"
         
         tableView.register(FriendsCell.self, forCellReuseIdentifier: "cell")
     }
