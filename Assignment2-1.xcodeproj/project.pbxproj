@@ -17,7 +17,7 @@
 		00374310272274B4003A4D2A /* BaceUIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037430F272274B4003A4D2A /* BaceUIStackView.swift */; };
 		003743122722777F003A4D2A /* VStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003743112722777F003A4D2A /* VStack.swift */; };
 		00374314272277B7003A4D2A /* HStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00374313272277B7003A4D2A /* HStack.swift */; };
-		003743162722781B003A4D2A /* BaceUIButtton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003743152722781B003A4D2A /* BaceUIButtton.swift */; };
+		003743162722781B003A4D2A /* BaseUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003743152722781B003A4D2A /* BaseUIButton.swift */; };
 		0037431927239213003A4D2A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037431827239213003A4D2A /* SignUpViewController.swift */; };
 		0037431B2723939D003A4D2A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037431A2723939D003A4D2A /* LoginViewController.swift */; };
 		0037431D2723BD7C003A4D2A /* BaseUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037431C2723BD7C003A4D2A /* BaseUITextField.swift */; };
@@ -29,6 +29,11 @@
 		006CE8312728CEC2007D2052 /* DataPrivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006CE8302728CEC2007D2052 /* DataPrivider.swift */; };
 		006CE858272B80AA007D2052 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006CE857272B80AA007D2052 /* TabBarViewController.swift */; };
 		006CE85B272B81C0007D2052 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006CE85A272B81C0007D2052 /* AppRouter.swift */; };
+		00AF89B42731FB9700F65745 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AF89B32731FB9700F65745 /* HomeViewController.swift */; };
+		00AF89B72732078300F65745 /* ProfileitemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AF89B62732078300F65745 /* ProfileitemView.swift */; };
+		00AF89B92732169100F65745 /* BaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AF89B82732169100F65745 /* BaseUIView.swift */; };
+		00AF89BB273216A900F65745 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AF89BA273216A900F65745 /* EmptyView.swift */; };
+		00AF89BD27321C3500F65745 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AF89BC27321C3500F65745 /* LocalDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +49,7 @@
 		0037430F272274B4003A4D2A /* BaceUIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaceUIStackView.swift; sourceTree = "<group>"; };
 		003743112722777F003A4D2A /* VStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStack.swift; sourceTree = "<group>"; };
 		00374313272277B7003A4D2A /* HStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack.swift; sourceTree = "<group>"; };
-		003743152722781B003A4D2A /* BaceUIButtton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaceUIButtton.swift; sourceTree = "<group>"; };
+		003743152722781B003A4D2A /* BaseUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIButton.swift; sourceTree = "<group>"; };
 		0037431827239213003A4D2A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0037431A2723939D003A4D2A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0037431C2723BD7C003A4D2A /* BaseUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUITextField.swift; sourceTree = "<group>"; };
@@ -56,6 +61,11 @@
 		006CE8302728CEC2007D2052 /* DataPrivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPrivider.swift; sourceTree = "<group>"; };
 		006CE857272B80AA007D2052 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		006CE85A272B81C0007D2052 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		00AF89B32731FB9700F65745 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		00AF89B62732078300F65745 /* ProfileitemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileitemView.swift; sourceTree = "<group>"; };
+		00AF89B82732169100F65745 /* BaseUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIView.swift; sourceTree = "<group>"; };
+		00AF89BA273216A900F65745 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		00AF89BC27321C3500F65745 /* LocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +98,7 @@
 		003742F127225CF1003A4D2A /* Assignment2-1 */ = {
 			isa = PBXGroup;
 			children = (
+				00AF89B52732076C00F65745 /* View */,
 				006CE859272B8199007D2052 /* Router */,
 				006CE8322728EBE4007D2052 /* Cell */,
 				006CE82D2728CDFD007D2052 /* Data */,
@@ -111,8 +122,10 @@
 				0037430F272274B4003A4D2A /* BaceUIStackView.swift */,
 				003743112722777F003A4D2A /* VStack.swift */,
 				00374313272277B7003A4D2A /* HStack.swift */,
-				003743152722781B003A4D2A /* BaceUIButtton.swift */,
+				003743152722781B003A4D2A /* BaseUIButton.swift */,
 				0037431C2723BD7C003A4D2A /* BaseUITextField.swift */,
+				00AF89B82732169100F65745 /* BaseUIView.swift */,
+				00AF89BA273216A900F65745 /* EmptyView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -126,6 +139,7 @@
 				003743212723C9B3003A4D2A /* FriendsViewController.swift */,
 				006CE82B2728C097007D2052 /* ProfileViewController.swift */,
 				006CE857272B80AA007D2052 /* TabBarViewController.swift */,
+				00AF89B32731FB9700F65745 /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -134,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				0037431F2723C54E003A4D2A /* Utils.swift */,
+				00AF89BC27321C3500F65745 /* LocalDataManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -161,6 +176,14 @@
 				006CE85A272B81C0007D2052 /* AppRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		00AF89B52732076C00F65745 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00AF89B62732078300F65745 /* ProfileitemView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +260,9 @@
 				003743242723CA58003A4D2A /* FriendsCell.swift in Sources */,
 				0037430927225EBB003A4D2A /* WelcomeViewController.swift in Sources */,
 				003742F327225CF1003A4D2A /* AppDelegate.swift in Sources */,
+				00AF89BB273216A900F65745 /* EmptyView.swift in Sources */,
 				00374310272274B4003A4D2A /* BaceUIStackView.swift in Sources */,
+				00AF89B42731FB9700F65745 /* HomeViewController.swift in Sources */,
 				003743222723C9B3003A4D2A /* FriendsViewController.swift in Sources */,
 				006CE8312728CEC2007D2052 /* DataPrivider.swift in Sources */,
 				006CE82C2728C097007D2052 /* ProfileViewController.swift in Sources */,
@@ -246,13 +271,16 @@
 				0037431927239213003A4D2A /* SignUpViewController.swift in Sources */,
 				003743202723C54E003A4D2A /* Utils.swift in Sources */,
 				003742F527225CF1003A4D2A /* SceneDelegate.swift in Sources */,
+				00AF89B92732169100F65745 /* BaseUIView.swift in Sources */,
 				0037431D2723BD7C003A4D2A /* BaseUITextField.swift in Sources */,
 				006CE858272B80AA007D2052 /* TabBarViewController.swift in Sources */,
 				00374314272277B7003A4D2A /* HStack.swift in Sources */,
-				003743162722781B003A4D2A /* BaceUIButtton.swift in Sources */,
+				00AF89BD27321C3500F65745 /* LocalDataManager.swift in Sources */,
+				003743162722781B003A4D2A /* BaseUIButton.swift in Sources */,
 				0037430E27226BBB003A4D2A /* BaseUILabel.swift in Sources */,
 				0037430C2722678D003A4D2A /* BaseUIImageView.swift in Sources */,
 				0037431B2723939D003A4D2A /* LoginViewController.swift in Sources */,
+				00AF89B72732078300F65745 /* ProfileitemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

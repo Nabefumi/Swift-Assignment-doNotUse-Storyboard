@@ -42,8 +42,8 @@ class WelcomeViewController: UIViewController {
         return stack
     }()
     
-    lazy var loginButton: BaceUIButtton = {
-        let button = BaceUIButtton()
+    lazy var loginButton: BaseUIButton = {
+        let button = BaseUIButton()
         button.setTitle("LOGIN", for: .normal)
         button.setTitleColor(UIColor.white, for: .normal)
         button.backgroundColor = UIColor(hexString: "#58CFC2")
@@ -55,8 +55,8 @@ class WelcomeViewController: UIViewController {
         return button
     }()
     
-    lazy var signUPButton: BaceUIButtton = {
-        let button = BaceUIButtton()
+    lazy var signUPButton: BaseUIButton = {
+        let button = BaseUIButton()
         button.setTitle("SIGN UP", for: .normal)
         button.setTitleColor(UIColor(hexString: "#8C8ABD"), for: .normal)
         button.backgroundColor = UIColor.white

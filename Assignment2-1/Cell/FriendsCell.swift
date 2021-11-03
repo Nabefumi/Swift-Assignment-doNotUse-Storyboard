@@ -58,8 +58,8 @@ class FriendsCell: UITableViewCell {
         return stack
     }()
     
-    lazy var shareButton: BaceUIButtton = {
-        let button = BaceUIButtton()
+    lazy var shareButton: BaseUIButton = {
+        let button = BaseUIButton()
         button.setImage(UIImage(named: "share"), for: .normal)
         
         return button
