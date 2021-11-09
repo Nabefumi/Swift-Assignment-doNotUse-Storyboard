@@ -24,7 +24,6 @@ class TabBarViewController: UITabBarController {
         
         friendsVC.tabBarItem = UITabBarItem(title: "Friends", image: UIImage(named: "friendsTab"), tag: 2)
         
-        
         tabBar.backgroundColor = UIColor(hexString:  "#F9F9F9")
         tabBar.tintColor = UIColor(hexString: "#58CFC2")
         

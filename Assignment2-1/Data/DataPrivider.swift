@@ -9,6 +9,15 @@ import UIKit
 
 class DataProvider {
     
+    static func makePopilarPlaceData() -> [Place] {
+        return [
+            Place(image: UIImage(named: "popularPlace"), name: "Vancouver"),
+            Place(image: UIImage(named: "popularPlace"), name: "Roma"),
+            Place(image: UIImage(named: "popularPlace"), name: "London"),
+            Place(image: UIImage(named: "popularPlace"), name: "Tokyo")
+        ]
+    }
+    
     static func makeData() ->  [(String, [User])] {
         
         var aSection: [User] = []

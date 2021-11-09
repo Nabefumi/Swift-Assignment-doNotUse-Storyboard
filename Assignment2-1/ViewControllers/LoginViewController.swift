@@ -44,8 +44,7 @@ class LoginViewController: UIViewController {
         tf.layer.cornerRadius = 25
         return tf
     }()
-    
-    
+
     lazy var loginButton: BaseUIButton = {
         let button = BaseUIButton()
         button.setTitle("Login", for: .normal)

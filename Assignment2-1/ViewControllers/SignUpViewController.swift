@@ -119,6 +119,5 @@ class SignUpViewController: UIViewController {
             let vc = TabBarViewController()
             AppRouter.navigate(to: vc)
         }
-        
     }
 }

@@ -34,6 +34,8 @@
 		00AF89B92732169100F65745 /* BaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AF89B82732169100F65745 /* BaseUIView.swift */; };
 		00AF89BB273216A900F65745 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AF89BA273216A900F65745 /* EmptyView.swift */; };
 		00AF89BD27321C3500F65745 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AF89BC27321C3500F65745 /* LocalDataManager.swift */; };
+		00EE8E10273A407500AE0EA3 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EE8E0F273A407500AE0EA3 /* Place.swift */; };
+		00EE8E12273A46DD00AE0EA3 /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EE8E11273A46DD00AE0EA3 /* PlaceCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +68,8 @@
 		00AF89B82732169100F65745 /* BaseUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIView.swift; sourceTree = "<group>"; };
 		00AF89BA273216A900F65745 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		00AF89BC27321C3500F65745 /* LocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
+		00EE8E0F273A407500AE0EA3 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		00EE8E11273A46DD00AE0EA3 /* PlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,7 @@
 			children = (
 				006CE82E2728CE2F007D2052 /* User.swift */,
 				006CE8302728CEC2007D2052 /* DataPrivider.swift */,
+				00EE8E0F273A407500AE0EA3 /* Place.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				003743232723CA58003A4D2A /* FriendsCell.swift */,
+				00EE8E11273A46DD00AE0EA3 /* PlaceCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -257,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				003743122722777F003A4D2A /* VStack.swift in Sources */,
+				00EE8E10273A407500AE0EA3 /* Place.swift in Sources */,
 				003743242723CA58003A4D2A /* FriendsCell.swift in Sources */,
 				0037430927225EBB003A4D2A /* WelcomeViewController.swift in Sources */,
 				003742F327225CF1003A4D2A /* AppDelegate.swift in Sources */,
@@ -281,6 +288,7 @@
 				0037430C2722678D003A4D2A /* BaseUIImageView.swift in Sources */,
 				0037431B2723939D003A4D2A /* LoginViewController.swift in Sources */,
 				00AF89B72732078300F65745 /* ProfileitemView.swift in Sources */,
+				00EE8E12273A46DD00AE0EA3 /* PlaceCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

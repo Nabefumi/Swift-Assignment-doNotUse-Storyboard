@@ -12,7 +12,6 @@ class LocalDataManager {
     static let AUTH_KEY = "isAuthorized"
     static let USERNAME_KEY = "username"
     static let EMAIL_KEY = "email"
-    
     static func isOnboarded(flag: Bool) {
         UserDefaults.standard.set(flag, forKey: AUTH_KEY)
     }
@@ -20,7 +19,6 @@ class LocalDataManager {
     static func isOnboarded() -> Bool {
         return UserDefaults.standard.bool(forKey: AUTH_KEY)
     }
-    
     
     static func setUsername(userName: String) {
         UserDefaults.standard.set(userName, forKey: USERNAME_KEY)

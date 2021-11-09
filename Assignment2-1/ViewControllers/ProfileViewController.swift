@@ -9,7 +9,6 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
-
     lazy var avatarView: BaseUIImageView = {
         let avatar = BaseUIImageView()
         avatar.image = UIImage(named: "placeHolder")
