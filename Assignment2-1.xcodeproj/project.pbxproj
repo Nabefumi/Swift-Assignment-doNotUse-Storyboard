@@ -36,6 +36,7 @@
 		00AF89BD27321C3500F65745 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AF89BC27321C3500F65745 /* LocalDataManager.swift */; };
 		00EE8E10273A407500AE0EA3 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EE8E0F273A407500AE0EA3 /* Place.swift */; };
 		00EE8E12273A46DD00AE0EA3 /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EE8E11273A46DD00AE0EA3 /* PlaceCell.swift */; };
+		00EE8E16273CD1D100AE0EA3 /* ImageViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EE8E15273CD1D100AE0EA3 /* ImageViewerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		00AF89BC27321C3500F65745 /* LocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
 		00EE8E0F273A407500AE0EA3 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		00EE8E11273A46DD00AE0EA3 /* PlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
+		00EE8E15273CD1D100AE0EA3 /* ImageViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				006CE82B2728C097007D2052 /* ProfileViewController.swift */,
 				006CE857272B80AA007D2052 /* TabBarViewController.swift */,
 				00AF89B32731FB9700F65745 /* HomeViewController.swift */,
+				00EE8E15273CD1D100AE0EA3 /* ImageViewerViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				003743122722777F003A4D2A /* VStack.swift in Sources */,
 				00EE8E10273A407500AE0EA3 /* Place.swift in Sources */,
+				00EE8E16273CD1D100AE0EA3 /* ImageViewerViewController.swift in Sources */,
 				003743242723CA58003A4D2A /* FriendsCell.swift in Sources */,
 				0037430927225EBB003A4D2A /* WelcomeViewController.swift in Sources */,
 				003742F327225CF1003A4D2A /* AppDelegate.swift in Sources */,

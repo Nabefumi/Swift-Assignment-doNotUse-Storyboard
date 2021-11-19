@@ -126,4 +126,9 @@ class HomeViewController: UIViewController,
         let heigth = collectionView.frame.height - 20
         return CGSize(width: 300, height: heigth)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = ImageViewerViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
