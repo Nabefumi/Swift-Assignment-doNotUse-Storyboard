@@ -20,6 +20,11 @@
 		003743222723C9B3003A4D2A /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003743212723C9B3003A4D2A /* FriendsViewController.swift */; };
 		003743242723CA58003A4D2A /* FriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003743232723CA58003A4D2A /* FriendsCell.swift */; };
 		00509E0F274E11A000DEAB9B /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00509E0E274E11A000DEAB9B /* PhotoCell.swift */; };
+		00509E12274EF2B800DEAB9B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 00509E11274EF2B800DEAB9B /* Lottie */; };
+		00509E14274EF35900DEAB9B /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00509E13274EF35900DEAB9B /* AnimationViewController.swift */; };
+		00509E16274EF54100DEAB9B /* animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 00509E15274EF54000DEAB9B /* animation.json */; };
+		00509E19274EF7BE00DEAB9B /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 00509E18274EF7BE00DEAB9B /* Charts */; };
+		00509E1B274EF80200DEAB9B /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00509E1A274EF80200DEAB9B /* ChartViewController.swift */; };
 		006CE82C2728C097007D2052 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006CE82B2728C097007D2052 /* ProfileViewController.swift */; };
 		006CE82F2728CE2F007D2052 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006CE82E2728CE2F007D2052 /* User.swift */; };
 		006CE8312728CEC2007D2052 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006CE8302728CEC2007D2052 /* DataProvider.swift */; };
@@ -48,6 +53,9 @@
 		003743212723C9B3003A4D2A /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		003743232723CA58003A4D2A /* FriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCell.swift; sourceTree = "<group>"; };
 		00509E0E274E11A000DEAB9B /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		00509E13274EF35900DEAB9B /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		00509E15274EF54000DEAB9B /* animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = animation.json; path = ../../../Downloads/animation.json; sourceTree = "<group>"; };
+		00509E1A274EF80200DEAB9B /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		006CE82B2728C097007D2052 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		006CE82E2728CE2F007D2052 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		006CE8302728CEC2007D2052 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
@@ -67,6 +75,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				002D92A1274CA87B006A5E1C /* ElementKit in Frameworks */,
+				00509E19274EF7BE00DEAB9B /* Charts in Frameworks */,
+				00509E12274EF2B800DEAB9B /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +102,7 @@
 		003742F127225CF1003A4D2A /* Assignment2-1 */ = {
 			isa = PBXGroup;
 			children = (
+				00509E15274EF54000DEAB9B /* animation.json */,
 				00AF89B52732076C00F65745 /* View */,
 				006CE859272B8199007D2052 /* Router */,
 				006CE8322728EBE4007D2052 /* Cell */,
@@ -119,6 +130,8 @@
 				00AF89B32731FB9700F65745 /* HomeViewController.swift */,
 				00EE8E15273CD1D100AE0EA3 /* ImageViewerViewController.swift */,
 				002D92A2274CBD70006A5E1C /* PlaceDetailViewController.swift */,
+				00509E13274EF35900DEAB9B /* AnimationViewController.swift */,
+				00509E1A274EF80200DEAB9B /* ChartViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -186,6 +199,8 @@
 			name = "Assignment2-1";
 			packageProductDependencies = (
 				002D92A0274CA87B006A5E1C /* ElementKit */,
+				00509E11274EF2B800DEAB9B /* Lottie */,
+				00509E18274EF7BE00DEAB9B /* Charts */,
 			);
 			productName = "Assignment2-1";
 			productReference = 003742EF27225CF1003A4D2A /* Assignment2-1.app */;
@@ -217,6 +232,8 @@
 			mainGroup = 003742E627225CF1003A4D2A;
 			packageReferences = (
 				002D929F274CA87B006A5E1C /* XCRemoteSwiftPackageReference "ElementKit" */,
+				00509E10274EF2B800DEAB9B /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				00509E17274EF7BE00DEAB9B /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = 003742F027225CF1003A4D2A /* Products */;
 			projectDirPath = "";
@@ -233,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				003742FF27225CF3003A4D2A /* LaunchScreen.storyboard in Resources */,
+				00509E16274EF54100DEAB9B /* animation.json in Resources */,
 				003742FC27225CF3003A4D2A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00EE8E10273A407500AE0EA3 /* Place.swift in Sources */,
+				00509E1B274EF80200DEAB9B /* ChartViewController.swift in Sources */,
 				00EE8E16273CD1D100AE0EA3 /* ImageViewerViewController.swift in Sources */,
 				003743242723CA58003A4D2A /* FriendsCell.swift in Sources */,
 				0037430927225EBB003A4D2A /* WelcomeViewController.swift in Sources */,
@@ -257,6 +276,7 @@
 				006CE85B272B81C0007D2052 /* AppRouter.swift in Sources */,
 				006CE82F2728CE2F007D2052 /* User.swift in Sources */,
 				0037431927239213003A4D2A /* SignUpViewController.swift in Sources */,
+				00509E14274EF35900DEAB9B /* AnimationViewController.swift in Sources */,
 				003743202723C54E003A4D2A /* Utils.swift in Sources */,
 				003742F527225CF1003A4D2A /* SceneDelegate.swift in Sources */,
 				006CE858272B80AA007D2052 /* TabBarViewController.swift in Sources */,
@@ -484,6 +504,22 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		00509E10274EF2B800DEAB9B /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		00509E17274EF7BE00DEAB9B /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -491,6 +527,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 002D929F274CA87B006A5E1C /* XCRemoteSwiftPackageReference "ElementKit" */;
 			productName = ElementKit;
+		};
+		00509E11274EF2B800DEAB9B /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00509E10274EF2B800DEAB9B /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		00509E18274EF7BE00DEAB9B /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00509E17274EF7BE00DEAB9B /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
