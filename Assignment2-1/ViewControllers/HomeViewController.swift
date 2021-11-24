@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ElementKit
 
 class HomeViewController: UIViewController,
                           UICollectionViewDelegate,
@@ -128,7 +129,7 @@ class HomeViewController: UIViewController,
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = ImageViewerViewController()
+        let vc = PlaceDetailViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

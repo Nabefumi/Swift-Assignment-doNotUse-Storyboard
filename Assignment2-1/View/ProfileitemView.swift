@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ElementKit
 
 class ProfileItemView: HStack {
     

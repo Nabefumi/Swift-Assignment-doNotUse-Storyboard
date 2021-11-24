@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ElementKit",
+        "repositoryURL": "https://github.com/Nabefumi/ElementKit",
+        "state": {
+          "branch": null,
+          "revision": "d27a8e228532c39d93ad0250bc2d9d1da9b8b6f4",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
