@@ -28,5 +28,8 @@ class TabBarViewController: UITabBarController {
         tabBar.tintColor = UIColor(hexString: "#58CFC2")
         
         viewControllers = [homeVC, profileVC, friendsVC]
+        
+        // for test purpose
+        Networking.sampleApi()
     }
 }
